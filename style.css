@@ -33,9 +33,10 @@ This is Company Logo Section Style
 .company-logos{
     display: flex;
     flex-direction: row;
+    /* margin-right: 20px; */
 }
-.company-logo> div{
-    margin-right: 20px;
+.company-logos> .logo{
+    
 }
 
 /*----------------------------
@@ -53,7 +54,7 @@ This is Company Logo Section Style
     width: 250px;
     height: 150px;
 }
-.photo-gallery{
+.photo-gallery> .photos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: repeat(2, auto); */
@@ -64,4 +65,15 @@ This is Company Logo Section Style
     width: 200px;
     height: 150px;
 }
+.photo-gallery{
+    position: relative;
+}
+#read-more{
+    position: absolute;
+    right: 0px;
+}
+#read-more a{
+    text-decoration: none;
+}
+ 
 
