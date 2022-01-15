@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray; */
+}
+/* --------------------
+This is Header Style
+---------------------- */
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+   
+}
+.menu> nav> ul> li a{
+    text-decoration: none;
+}
+.menu> nav> ul> li {
+    list-style-type: none;
+}
+.menu> nav> ul {
+    display: flex;
+    flex-direction: row;
+}
+.menu> nav> ul> li {
+     margin-right: 25px;
+}
+
