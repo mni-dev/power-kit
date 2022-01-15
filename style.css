@@ -82,6 +82,7 @@ header {
     border-style: none;
 }
 #booking-btn> a, .white{
+    font-size: 16px;
     color: white;
     margin-left: 5px;
 }
@@ -188,11 +189,35 @@ This is Company Logo Section Style
 /*---------------------------------------
         This is Services Section Style 
 ---------------------------------------*/
-.landing-ur-dream> .services> ul> {
-    display: flex;
+.landing-ur-dream{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+}
+.services-details{
+    margin-right: 20%;
+}
+.landing-ur-dream> div> h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
 }
 .services> ul> li {
     list-style-type: none;
+}
+.services> ul> li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.find-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.find-us p{
+    font-size: 25px;
 }
 
 /*---------------------------------------
