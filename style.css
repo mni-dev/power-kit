@@ -1,12 +1,10 @@
 body{
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin: 0 auto;
+    width: 90%;
     font-family: 'Roboto', sans-serif;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray; */
 }
+
 /* --------------------
 This is Header Style
 ---------------------- */
@@ -27,5 +25,43 @@ header {
 }
 .menu> nav> ul> li {
      margin-right: 25px;
+}
+
+/* ---------------------------------------
+This is Company Logo Section Style
+----------------------------------------- */
+.company-logos{
+    display: flex;
+    flex-direction: row;
+}
+.company-logo> div{
+    margin-right: 20px;
+}
+
+/*----------------------------
+ This is Photo Gallery
+ -------------------------- */
+.intro-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+}
+.intro-section> .intro-title{
+    margin-right: 100px;
+}
+.intro-pic img{
+    width: 250px;
+    height: 150px;
+}
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, auto); */
+    column-gap: 20px;
+    
+}
+.photo-gallery> .photos> img{
+    width: 200px;
+    height: 150px;
 }
 
