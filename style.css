@@ -4,7 +4,8 @@ body{
 }
 .wrapper{
     margin: 0 auto;
-    background-color: rgba(214, 213, 213, 0.829);
+    /* background-color: rgba(214, 213, 213, 0.829); */
+    /* background-color:  #AAAAAA; */
     font-family: 'Roboto', sans-serif;
     width: 100%;
     display: flex;
@@ -20,59 +21,72 @@ a {
     display: flex;
     flex-direction: column;
 }
+main p{
+    font-size: 18px;
+}
 
-/* ----------------------------------
-This is Header Section Style
----------------------------------- */
+/* -----------------------------------------------
+        This is Header Section Style
+----------------------------------------------- */
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.head-title{
-    margin-right: 150px;
-}
 #power-head{
     font-size: 16px;
 }
-.menu> nav> ul> li {
+.head-menu{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.head-menu> ul> li {
     list-style-type: none;
 }
-.head-menu> nav> ul {
+.head-menu> ul {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
-.head-menu> nav> ul> li {
-     margin-right: 50px;
+.head-menu> ul> li {
      font-size: 16px;
+     margin-right: 4em;
+}
+.head-menu> ul> li> a {
+     color: black;
+}
+.head-menu> .menu-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-icons a{
+    color: black;
 }
 .fa-search, .fa-cart-plus{
     font-size: 25px;
-    margin-right: 25px;
+    margin-right: 1.5em;
 }
 
-/*-----------------------------------------
-             This is Intro Section Style
-------------------------------------------*/
-
- #intro-head{
-     font-size: 52px;
- }
+/*------------------------------------------------
+        This is Intro Section Style
+------------------------------=======------------*/
 .intro-section{
     display: grid;
-    grid-template-columns: 55% 1fr;
-    /* column-gap: 5%; */
-    /* width: 580px; */
+    grid-template-columns: 60% 40%;
+    margin-top: 100px;
 }
-.intro-section> .intro-title{
-    margin-right: 50%px;
-
+.intro-stats h1, button{
+    margin-right: 5em;
 }
-.intro-pic{
-    margin-left: 200px;
+.intro-stats p{
+    margin-right: 15em;
+}
+#intro-head{
+    font-size: 52px;
 }
 .intro-pic img{
-    width: 250px;
-    height: 190px;
+    width: 350px;
+    height: 200px;
 }
 #booking-btn{
     margin-bottom: 30px;
@@ -92,19 +106,17 @@ This is Company Logo Section Style
 ----------------------------------------- */
 .company-logos{
     display: flex;
-    flex-direction: row;
-    margin-right: 20px;
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgba(212, 211, 211, 0.973);
     border-bottom: 1px solid rgba(212, 211, 211, 0.973); 
     margin-bottom: 100px;
-    margin-top: 50px; 
-    padding: 10px 0;
+    margin-top: 100px;
+    padding: 15px 0;
 }
 .company-logos> .logo{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
     width: 10%;
 }
 
@@ -112,45 +124,32 @@ This is Company Logo Section Style
  This is Photo Gallery Section Style
  -------------------------------------- */
 .photo-gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.photo-gallery> .photos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(2, auto); */
-    column-gap: 10px;  
+    column-gap: 10px;
+    row-gap: 15px;
+    position: relative;
 }
-.photo-gallery> .photos> .photo-item{
-    margin-right: 10px;
+.photo-item{
+    display:flex;
+    flex-direction: column; 
+    box-shadow: 0 0 10px 2px grey;
 }
-.photo-gallery> .photos> img{
-    width: 200px;
-    height: 150px;
+.photo img{
+    width: 100%;
+    height: 300px;
 }
 .photo-title{
     margin-top: 15px;
 }
-.photo-gallery{
-    position: relative;
-}
-.photo-item> div{
-    display: flex;
-    flex-direction: column;
-}
-.photo-title> h2, .photo-product> p, .rating-star> p, .photo-descriptor> p{
+.photo-title> h2, .product-value> p, .rating-star> p, .photo-descriptor> p{
     margin-top: 0;
-    /* margin-bottom: 0; */
+    padding-left: 5px;
 }
 .product-value> p{
     font-weight: 400;
     font-size: 24px;
-}
-.rating-star{
-    width: 150px;
-    height: 32px;
+    padding-left: 5px;
 }
 .rating-star> p> i{
     color: tomato;
@@ -171,15 +170,17 @@ This is Company Logo Section Style
     font-weight: 700;
     line-height: 20px;
 }
-#see-more{
+/* #sea-more{
+    float: right;
+    bottom: 0;
     position: absolute;
     right: 0px;
-}
+} */
 #see-more a{
     text-decoration: none;
     color: #E02C6D;
 }
-#see-more .arrow-sign{
+#see-more> a .arrow-sign{
     color: #E02C6D;
     margin-left: 5px;
     font-weight: bolder;
@@ -196,6 +197,7 @@ This is Company Logo Section Style
 }
 .services-details{
     margin-right: 20%;
+    border-right: 4px solid grey;
 }
 .landing-ur-dream> div> h2{
     font-size: 25px;
@@ -205,16 +207,17 @@ This is Company Logo Section Style
 .services> ul> li {
     list-style-type: none;
 }
-.services> ul> li a {
-    color: black;
+.services> ul> li a{
     font-size: 20px;
     font-weight: bolder;
+    color: black;
 }
 .find-us{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 .find-us p{
     font-size: 25px;
@@ -254,4 +257,23 @@ footer> .copyright-stats{
 .copyright-stats .sns-icons i {
     font-size: 20px;
     padding-left: 15px;
+}
+/*---------------------------------------
+         This is Responsive Style
+--------------------------------------- */
+@media only screen and (max-width:576px) {
+    .wrapper> header, main{
+        padding: 5px 0;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #power-head{
+        text-align: center;
+    }
+    .head-menu> nav> ul> li{
+        margin-right: 5px;
+    }
+    
 }
