@@ -1,12 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .wrapper{
-    padding:0;
+    padding: 0 20px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgba(214, 213, 213, 0.829);
     font-family: 'Roboto', sans-serif;
     width: 90%;
     display: flex;
     flex-direction: column;
-
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 a {
     text-decoration: none;
@@ -104,6 +109,9 @@ This is Company Logo Section Style
     width: 200px;
     height: 150px;
 }
+.photo-title{
+    margin-top: 15px;
+}
 .photo-gallery{
     position: relative;
 }
@@ -111,9 +119,36 @@ This is Company Logo Section Style
     display: flex;
     flex-direction: column;
 }
+.photo-title> h2, .photo-product> p, .rating-star> p, .photo-descriptor> p{
+    margin-top: 0;
+    /* margin-bottom: 0; */
+}
+.product-value> p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.rating-star{
+    width: 150px;
+    height: 32px;
+}
+.rating-star> p> i{
+    color: tomato;
+    font-size: 14px;
+}
 .photo-item> .rating-star{
     display: flex;
     flex-direction: row;
+}
+.photo-item> .rating-star> p{
+    margin-right: 10px;
+    margin-top: 0;
+}
+.photo-descriptor> p{
+    width: 150px;
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
 }
 #read-more{
     position: absolute;
@@ -124,9 +159,33 @@ This is Company Logo Section Style
 }
 
 /*---------------------------------------
- This is Footer Section Style
---------------------------------------- */
-.footer-section{
-    
+        This is Services Section Style 
+---------------------------------------*/
+.landing-ur-dream> .services> ul> {
+    display: flex;
+}
+.services> ul> li {
+    list-style-type: none;
 }
 
+/*---------------------------------------
+        This is Footer Section Style
+--------------------------------------- */
+.footer-section{
+    position: relative;
+    /* background-color: rgba(3, 2, 77, 0.932); */
+    margin-top: ;
+}
+.footer-section> footer{
+    position: absolute;
+    width: 262px;
+    height: 127px;
+    left: 590px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: rgba(3, 2, 77, 0.932);
+}
+.footer-section> footer> h1{
+    font-size: 24px;
+    font-weight: 900;
+}
