@@ -29,15 +29,22 @@ main p{
         This is Header Section Style
 ----------------------------------------------- */
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 3fr; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-#power-head{
-    font-size: 16px;
+.head-title, .head-menu{
+    margin-top: 5px;
 }
 .head-menu{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 1fr 1fr;
+}
+.head-title> #power-head{
+    font-size: 16px;
+    margin-top: 0;
 }
 .head-title> a{
     visibility: hidden;
@@ -47,8 +54,9 @@ header {
 }
 .head-menu> ul {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
 }
 .head-menu> ul> li {
      font-size: 16px;
@@ -61,7 +69,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 .menu-icons a{
     color: black;
 }
@@ -89,7 +97,7 @@ header {
 }
 .intro-pic img{
     width: 350px;
-    height: 200px;
+    height: 300px;
 }
 #booking-btn{
     margin-bottom: 30px;
@@ -134,6 +142,9 @@ This is Company Logo Section Style
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#gallery-title h2{
+    font-size: 30px;
 }
 .photo-album{
     display: grid;
@@ -188,11 +199,9 @@ This is Company Logo Section Style
     text-decoration: none;
     color: #E02C6D;
 }
-/* .explore-more> a .arrow-sign{
+#see-more .arrow-sign{
     margin-left: 5px;
-    font-weight: bolder;
-    font-size: 14px;
-} */
+}
 
 /*---------------------------------------
         This is Services Section Style 
@@ -200,11 +209,15 @@ This is Company Logo Section Style
 .landing-ur-dream{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .services-details{
-    margin-right: 20%;
-    border-right: 4px solid grey;
+    margin-right: 5%;
+    border-right: 3px solid grey;
+    padding-right: 50px;
+}
+.services-details p{
+    text-align: justify;
 }
 .landing-ur-dream> div> h2{
     font-size: 25px;
@@ -221,16 +234,17 @@ This is Company Logo Section Style
 }
 .find-us{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
 .find-us h2{
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 0;
 }
 .find-us p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*---------------------------------------
@@ -257,21 +271,22 @@ footer> .copyright-stats{
     margin-bottom: 10px;
 }
 .copyright-stats h1{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: 2px;
 }
 .copyright-stats p{
-    font-size: 14px;
+    font-size: 16px;
 }
 .copyright-stats .sns-icons i {
     font-size: 20px;
-    padding-left: 15px;
+    padding-right: 10px;
 }
 
 /*---------------------------------------------------
             This is Responsive Style
-            For Max-width:576px
+            For Mobile View
+            Max-width:576px
 --------------------------------------------------- */
 @media only screen and (max-width:576px) {
     .wrapper> header, main{
@@ -302,13 +317,6 @@ footer> .copyright-stats{
         margin-right: 10px;
         text-align: justify;
     }
-    .company-logos{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 10px;
-        margin-top: 50px;
-        margin-bottom: 0;
-    }
     .photo-gallery{
         margin-top: 50px;
     }
@@ -323,9 +331,17 @@ footer> .copyright-stats{
     .head-menu{
         display: none;
     }
+    .company-logos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
     .logo img{
         width: 50px;
-    }
+    } 
     .landing-ur-dream{
         margin-top: 50px;
         margin-bottom: 0;
@@ -362,4 +378,94 @@ footer> .copyright-stats{
     .copyright-stats .sns-icons{
         margin-top: 10px;
     }
+}
+/*---------------------------------------------------
+            This is Responsive Style
+            For Tablet View
+            Min-width: 577px, Max-width: 768px
+--------------------------------------------------- */
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .wrapper> main{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .head-title{
+        margin-right: 50px;
+    }
+    .head-title, .head-menu{
+        margin-top: 5px;
+    }
+    .head-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 70px;
+    }
+    .head-title> #power-head{
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .head-menu> ul> li {
+        list-style-type: none;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .head-menu> ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .intro-section{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+    #intro-head{
+        font-size: 30px;
+        margin-right: 30px;
+    }
+    .intro-stats p{
+        margin-right: 40px;
+        text-align: justify;
+    }
+    .intro-pic img{
+        width: 250px;
+        height: 200px;
+        position: relative;
+        top: 50px;
+        left: 20px;
+    }
+    .company-logos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .landing-ur-dream{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+   .landing-ur-dream .services-details{
+       border-right: 3px solid grey;
+       padding-right: 20px;
+       border-spacing: 10em;
+   }
+   .services-details p{
+       text-align: justify;
+   }
+   .find-us{
+       display: flex;
+       flex-direction: column;
+   }
+   .find-us h2{
+       margin-bottom: 0;
+   }
 }
