@@ -276,11 +276,14 @@ footer> .copyright-stats{
 @media only screen and (max-width:576px) {
     .wrapper> header, main{
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     header, .intro-section, .photo-album, .landing-ur-dream{
         display: flex;
         flex-direction: column;
+    }
+    #power-head{
+        margin-top: 0;
     }
     .intro-section{
         margin-top: 30px;
@@ -301,7 +304,13 @@ footer> .copyright-stats{
     }
     .company-logos{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .photo-gallery{
+        margin-top: 50px;
     }
     .head-title{
         display: flex;
@@ -309,9 +318,17 @@ footer> .copyright-stats{
     }
     .head-title> a{
         visibility: visible;
+        color: black;
     }
     .head-menu{
         display: none;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .landing-ur-dream{
+        margin-top: 50px;
+        margin-bottom: 0;
     }
     .services-details p{
         text-align: justify;
@@ -321,19 +338,28 @@ footer> .copyright-stats{
         margin-right: 20px;
         margin-left: 0;
     }
-    .services> ul> li{
-        list-style-position: inside;
-    }
     .services> ul> li> a{
         text-align: left;
     }
     .find-us{
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
     }
     .find-us h2{
         margin-bottom: 5px;
+        font-size: 25px;
     }
-
-    
+    .find-us p{
+        font-size: 18px;
+    }
+    .copyright-stats{
+        margin: 30px auto;
+    }
+    .copyright-stats p:nth-of-type(1) {
+        margin-bottom: 15px;
+    }
+    .copyright-stats .sns-icons{
+        margin-top: 10px;
+    }
 }
