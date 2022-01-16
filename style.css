@@ -35,7 +35,6 @@ main p{
 /* -----------------------------------------------
         This is Header Section Style
 ----------------------------------------------- */
-@media only screen and (min-width:769px) and (max-width:1400px) {
 header {
     /* display: grid;
     grid-template-columns: 1fr 3fr; */
@@ -300,7 +299,7 @@ footer> .copyright-stats{
     font-size: 20px;
     padding-right: 10px;
 }
-}
+
 
 
                         /*---------------------------------------------------
