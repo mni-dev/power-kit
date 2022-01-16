@@ -1,3 +1,6 @@
+                            /*-------------------------------------------------------------
+                                             This Style is for All Device View
+                            ----------------------------------------------------------------*/
 body{
     margin: 0;
     padding: 0;
@@ -5,7 +8,6 @@ body{
 .wrapper{
     margin: 0 auto;
     background-color: rgba(214, 213, 213, 0.829);
-    /* background-color:  rgba(216, 215, 215, 0.938); */
     font-family: 'Roboto', sans-serif;
     width: 100%;
     display: flex;
@@ -24,10 +26,16 @@ a {
 main p{
     font-size: 18px;
 }
+                            /*----------------------------------------------------
+                                        This is Responsive style
+                                        For Desktop View
+                                        Min-width:769px, Max-width:1400px
+                            ----------------------------------------------------*/
 
 /* -----------------------------------------------
         This is Header Section Style
 ----------------------------------------------- */
+@media only screen and (min-width:769px) and (max-width:1400px) {
 header {
     /* display: grid;
     grid-template-columns: 1fr 3fr; */
@@ -292,12 +300,14 @@ footer> .copyright-stats{
     font-size: 20px;
     padding-right: 10px;
 }
+}
 
-/*---------------------------------------------------
-            This is Responsive Style
-            For Mobile View
-            Max-width:576px
---------------------------------------------------- */
+
+                        /*---------------------------------------------------
+                                    This is Responsive Style
+                                    For Mobile View
+                                    Max-width:576px
+                        --------------------------------------------------- */
 @media only screen and (max-width:576px) {
     .wrapper> header, main{
         margin-top: 10px;
@@ -393,15 +403,18 @@ footer> .copyright-stats{
         margin-top: 10px;
     }
 }
-/*---------------------------------------------------
-            This is Responsive Style
-            For Tablet View
-            Min-width: 577px, Max-width: 768px
---------------------------------------------------- */
+
+
+                            /*-----------------------------------------------------------
+                                        This is Responsive Style
+                                        For Tablet View
+                                        Min-width: 577px, Max-width: 768px
+                            ------------------------------------------------------------ */
 @media only screen and (min-width:577px) and (max-width:768px) {
     .wrapper> main{
         margin-top: 10px;
         margin-left: 5px;
+        margin-right: 50px;
     }
     header {
         display: flex;
@@ -482,3 +495,4 @@ footer> .copyright-stats{
        margin-bottom: 0;
    }
 }
+                            
