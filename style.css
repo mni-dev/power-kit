@@ -5,14 +5,14 @@ body{
 .wrapper{
     margin: 0 auto;
     /* background-color: rgba(214, 213, 213, 0.829); */
-    /* background-color:  #AAAAAA; */
+    background-color:  rgba(216, 215, 215, 0.938);
     font-family: 'Roboto', sans-serif;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 .wrapper> header, main{
-    padding: 0 40px;
+    padding: 0 20px;
 }
 a {
     text-decoration: none;
@@ -261,7 +261,7 @@ This is Company Logo Section Style
 --------------------------------------- */
  
 footer{
-    background-color: black;
+    background-color: rgba(7, 0, 32, 0.925);
     margin: 0 0;
     padding: 30px 0;
 
@@ -308,12 +308,15 @@ footer> .copyright-stats{
     }
     #power-head{
         margin-top: 0;
+        margin-left: 60px;
+        margin-right: 70px;
     }
     .intro-section{
         margin-top: 30px;
     }
     .intro-pic img{
-        width: 90%;
+        width: 150x;
+        height: 250px;
     }
     .intro-section .intro-stats{
         order: 2;
@@ -402,17 +405,16 @@ footer> .copyright-stats{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 30px;
     }
     .head-title{
-        margin-right: 50px;
-    }
-    .head-title, .head-menu{
-        margin-top: 5px;
+        margin-right: 10px;
     }
     .head-menu{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-left: 70px;
+        margin-left: 150px;
+        margin-top: 5px;
     }
     .head-title> #power-head{
         font-size: 16px;
@@ -420,7 +422,6 @@ footer> .copyright-stats{
     }
     .head-menu> ul> li {
         list-style-type: none;
-        margin-left: 0;
         margin-right: 20px;
     }
     .head-menu> ul {
@@ -430,10 +431,9 @@ footer> .copyright-stats{
         margin-top: 0;
     }
     .intro-section{
-        display: grid;
-        grid-template-columns: 65% 35%;
-        margin-top: 50px;
-        margin-right: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
     }
     #intro-head{
         font-size: 30px;
@@ -443,12 +443,14 @@ footer> .copyright-stats{
         margin-right: 40px;
         text-align: justify;
     }
+   
     .intro-pic img{
         width: 250px;
         height: 200px;
         position: relative;
         top: 50px;
         left: 20px;
+        
     }
     .company-logos{
         display: grid;
