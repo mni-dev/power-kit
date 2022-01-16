@@ -95,6 +95,15 @@ header {
 #intro-head{
     font-size: 52px;
 }
+#see-me-changed{
+    margin-bottom: 0;
+}
+#intro-head #see-me-changed:hover{
+    display: inline-block;
+    transform:scale(1.2, 1.2);
+    transition: transform 2s ease-in-out; 
+    color: tomato;
+}
 .intro-pic img{
     width: 350px;
     height: 300px;
